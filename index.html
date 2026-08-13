@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Aryan Nayak | Electrical Engineering Portfolio</title>
+
+  <meta name="description" content="Aryan Nayak - Diploma Electrical Engineering graduate, aspiring B.Tech student and electrical engineering enthusiast.">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #07111f;
+      color: #eaf2ff;
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(1100px, 92%);
+      margin: auto;
+    }
+
+    /* NAVIGATION */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(7, 17, 31, 0.94);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid #20344d;
+    }
+
+    .nav-inner {
+      min-height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-size: 22px;
+      font-weight: bold;
+      color: #65b8ff;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 24px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: #c8d8eb;
+      font-size: 14px;
+    }
+
+    .nav-links a:hover {
+      color: #65b8ff;
+    }
+
+    /* HERO */
+    .hero {
+      min-height: 90vh;
+      display: flex;
+      align-items: center;
+      padding: 80px 0;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.3fr 0.7fr;
+      gap: 50px;
+      align-items: center;
+    }
+
+    .tag {
+      display: inline-block;
+      padding: 8px 14px;
+      border: 1px solid #2b5680;
+      border-radius: 30px;
+      color: #65b8ff;
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: clamp(42px, 7vw, 75px);
+      line-height: 1.05;
+      margin-bottom: 18px;
+    }
+
+    .hero h1 span {
+      color: #65b8ff;
+    }
+
+    .hero p {
+      color: #a9bbd0;
+      font-size: 18px;
+      max-width: 650px;
+    }
+
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 30px;
+    }
+
+    .btn {
+      padding: 13px 21px;
+      border-radius: 10px;
+      border: 1px solid #65b8ff;
+      font-weight: bold;
+      display: inline-block;
+    }
+
+    .btn-primary {
+      background: #65b8ff;
+      color: #07111f;
+    }
+
+    .btn-secondary {
+      color: #65b8ff;
+    }
+
+    .profile-card {
+      background: #0c1b2d;
+      border: 1px solid #28425f;
+      padding: 25px;
+      border-radius: 25px;
+      text-align: center;
+    }
+
+    .profile-placeholder {
+      width: 210px;
+      height: 210px;
+      margin: auto;
+      border-radius: 50%;
+      border: 4px solid #65b8ff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #8ca4bd;
+      font-size: 14px;
+      text-align: center;
+    }
+
+    /* SECTIONS */
+    section {
+      padding: 90px 0;
+    }
+
+    .section-title {
+      margin-bottom: 45px;
+    }
+
+    .section-title small {
+      color: #65b8ff;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    .section-title h2 {
+      font-size: 38px;
+      margin-top: 5px;
+    }
+
+    .section-title p {
+      color: #9db0c5;
+      max-width: 700px;
+    }
+
+    .card {
+      background: #0c1b2d;
+      border: 1px solid #263f5b;
+      border-radius: 18px;
+      padding: 25px;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 25px;
+    }
+
+    .card h3 {
+      color: #65b8ff;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: #a9bbd0;
+    }
+
+    /* EDUCATION */
+    .timeline {
+      border-left: 2px solid #65b8ff;
+      padding-left: 25px;
+    }
+
+    .timeline-item {
+      margin-bottom: 30px;
+    }
+
+    .timeline-item h3 {
+      margin-bottom: 5px;
+    }
+
+    .date {
+      color: #65b8ff;
+      font-size: 14px;
+    }
+
+    /* SKILLS */
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .skill {
+      background: #0c1b2d;
+      border: 1px solid #263f5b;
+      border-radius: 14px;
+      padding: 20px;
+    }
+
+    .skill strong {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .skill span {
+      color: #91a7bd;
+      font-size: 14px;
+    }
+
+    /* INTERNSHIP */
+    .internship {
+      border-left: 4px solid #65b8ff;
+    }
+
+    .internship ul {
+      margin: 15px 0 0 20px;
+      color: #a9bbd0;
+    }
+
+    /* GALLERY */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .gallery-item {
+      min-height: 190px;
+      border-radius: 15px;
+      border: 1px dashed #41617e;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #7189a2;
+      text-align: center;
+      padding: 20px;
+    }
+
+    /* CONTACT */
+    .contact {
+      text-align: center;
+      background: #0c1b2d;
+      border: 1px solid #263f5b;
+      border-radius: 22px;
+      padding: 45px 20px;
+    }
+
+    .contact p {
+      color: #a9bbd0;
+      margin: 10px 0 25px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 15px;
+      border-top: 1px solid #20344d;
+      color: #7189a2;
+      font-size: 14px;
+    }
+
+    /* MOBILE */
+    @media (max-width: 800px) {
+      .nav-links {
+        display: none;
+      }
+
+      .hero-grid,
+      .about-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        min-height: auto;
+        padding: 70px 0;
+      }
+
+      .profile-card {
+        max-width: 350px;
+        margin: auto;
+      }
+
+      .skills,
+      .gallery {
+        grid-template-columns: 1fr;
+      }
+
+      section {
+        padding: 65px 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <div class="container nav-inner">
+      <a href="#home" class="logo">ARYAN NAYAK</a>
+
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#internship">Internship</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#gallery">Photos</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <!-- HOME -->
+  <section id="home" class="hero">
+    <div class="container hero-grid">
+
+      <div>
+        <div class="tag">Electrical Engineering • Diploma Graduate</div>
+
+        <h1>
+          Hi, I'm <span>Aryan Nayak</span>
+        </h1>
+
+        <p>
+          Diploma Electrical Engineering graduate interested in
+          electrical power systems, maintenance, transmission,
+          troubleshooting and practical engineering.
+        </p>
+
+        <div class="buttons">
+          <a href="#about" class="btn btn-primary">Explore My Profile</a>
+          <a href="#contact" class="btn btn-secondary">Contact Me</a>
+        </div>
+      </div>
+
+      <div class="profile-card">
+
+        <!-- WE WILL ADD YOUR REAL PHOTO HERE LATER -->
+
+        <div class="profile-placeholder">
+          Your professional photo
+        </div>
+
+        <h3 style="margin-top:18px;">Aryan Nayak</h3>
+
+        <p style="color:#91a7bd;">
+          Electrical Engineering
+        </p>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container">
+
+      <div class="section-title">
+        <small>01 — About</small>
+        <h2>About Me</h2>
+      </div>
+
+      <div class="about-grid">
+
+        <div class="card">
+          <h3>Career Objective</h3>
+
+          <p>
+            Motivated Diploma Electrical Engineering graduate seeking
+            opportunities to apply technical knowledge and practical
+            training in the electrical industry.
+          </p>
+
+          <br>
+
+          <p>
+            I am interested in power systems, electrical maintenance,
+            transmission systems, electrical safety and field operations.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Professional Interests</h3>
+
+          <p>
+            ⚡ Electrical Power Systems
+          </p>
+
+          <p>
+            🔧 Electrical Maintenance
+          </p>
+
+          <p>
+            🏭 Industrial Electrical Systems
+          </p>
+
+          <p>
+            🔌 Power Transmission
+          </p>
+
+          <p>
+            🛠️ Troubleshooting & Field Operations
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- EDUCATION -->
+  <section id="education">
+    <div class="container">
+
+      <div class="section-title">
+        <small>02 — Education</small>
+        <h2>Education</h2>
+      </div>
+
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="date">Diploma</div>
+
+          <h3>Diploma in Electrical Engineering</h3>
+
+          <p>
+            Bhubanananda Odisha School of Engineering (BOSE), Cuttack
+          </p>
+        </div>
+
+        <div class="timeline-item">
+          <div class="date">2021</div>
+
+          <h3>10th Standard</h3>
+
+          <p>
+            Barunai High School, Patapur
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- INTERNSHIP -->
+  <section id="internship">
+    <div class="container">
+
+      <div class="section-title">
+        <small>03 — Experience</small>
+        <h2>Internship</h2>
+      </div>
+
+      <div class="card internship">
+
+        <div class="date">
+          06 July 2023 — 04 August 2023
+        </div>
+
+        <h3>
+          Odisha Power Transmission Corporation Limited (OPTCL)
+        </h3>
+
+        <p>
+          E&MR Division, OPTCL, Cuttack
+        </p>
+
+        <br>
+
+        <ul>
+          <li>Completed industrial training at E&MR Sub-Division, OPTCL, Choudwar.</li>
+
+          <li>
+            Gained practical exposure to electrical power transmission
+            and maintenance activities.
+          </li>
+
+          <li>
+            Learned operation and maintenance procedures of electrical equipment.
+          </li>
+
+          <li>
+            Observed substation functioning and power distribution processes.
+          </li>
+
+          <li>
+            Developed understanding of electrical safety practices
+            and field operations.
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="container">
+
+      <div class="section-title">
+        <small>04 — Skills</small>
+        <h2>Technical Skills</h2>
+      </div>
+
+      <div class="skills">
+
+        <div class="skill">
+          <strong>Electrical Fundamentals</strong>
+          <span>Core electrical engineering knowledge</span>
+        </div>
+
+        <div class="skill">
+          <strong>Power Transmission</strong>
+          <span>Basic knowledge of transmission systems</span>
+        </div>
+
+        <div class="skill">
+          <strong>Electrical Maintenance</strong>
+          <span>Equipment operation and maintenance</span>
+        </div>
+
+        <div class="skill">
+          <strong>Troubleshooting</strong>
+          <span>Basic electrical troubleshooting</span>
+        </div>
+
+        <div class="skill">
+          <strong>Substation Equipment</strong>
+          <span>Basic understanding of substation systems</span>
+        </div>
+
+        <div class="skill">
+          <strong>Electrical Safety</strong>
+          <span>Safety practices and field operations</span>
+        </div>
+
+        <div class="skill">
+          <strong>MS Office</strong>
+          <span>Word, Excel and PowerPoint</span>
+        </div>
+
+        <div class="skill">
+          <strong>Computer Operations</strong>
+          <span>Basic computer and internet skills</span>
+        </div>
+
+        <div class="skill">
+          <strong>Communication</strong>
+          <span>Odia, Hindi and English</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="container">
+
+      <div class="section-title">
+        <small>05 — Projects</small>
+        <h2>Projects</h2>
+
+        <p>
+          Projects will be added here as I continue developing
+          my technical and engineering skills.
+        </p>
+      </div>
+
+      <div class="card">
+
+        <h3>Coming Soon</h3>
+
+        <p>
+          My electrical engineering projects, college projects
+          and future B.Tech projects will be displayed here.
+        </p>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- PHOTOS -->
+  <section id="gallery">
+    <div class="container">
+
+      <div class="section-title">
+        <small>06 — Gallery</small>
+        <h2>Photos</h2>
+
+        <p>
+          A collection of professional, internship and project photos.
+        </p>
+      </div>
+
+      <div class="gallery">
+
+        <div class="gallery-item">
+          Internship Photo<br>
+          (We'll add this later)
+        </div>
+
+        <div class="gallery-item">
+          Certificate Photo<br>
+          (We'll add this later)
+        </div>
+
+        <div class="gallery-item">
+          Project Photo<br>
+          (We'll add this later)
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container">
+
+      <div class="contact">
+
+        <div class="section-title">
+          <small>07 — Contact</small>
+          <h2>Let's Connect</h2>
+        </div>
+
+        <p>
+          I'm open to learning opportunities, internships,
+          projects and professional connections.
+        </p>
+
+        <div class="buttons" style="justify-content:center;">
+
+          <a
+            class="btn btn-primary"
+            href="mailto:aryannayak297@gmail.com">
+            Email Me
+          </a>
+
+          <a
+            class="btn btn-secondary"
+            href="https://www.linkedin.com/"
+            target="_blank">
+            LinkedIn
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer>
+    © 2026 Aryan Nayak • Electrical Engineering Portfolio
+  </footer>
+
+</body>
+  </html>
