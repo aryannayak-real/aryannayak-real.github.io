@@ -6,7 +6,7 @@
 
   <title>Aryan Nayak | Electrical Engineering Portfolio</title>
 
-  <meta name="description" content="Aryan Nayak - Diploma Electrical Engineering graduate, aspiring B.Tech student and electrical engineering enthusiast.">
+  <meta name="description" content="Aryan Nayak - Electrical Engineering graduate and aspiring B.Tech student.">
 
   <style>
     * {
@@ -144,18 +144,15 @@
       text-align: center;
     }
 
-    .profile-placeholder {
+    /* PROFILE PHOTO */
+    .profile-photo {
       width: 210px;
       height: 210px;
       margin: auto;
       border-radius: 50%;
       border: 4px solid #65b8ff;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #8ca4bd;
-      font-size: 14px;
-      text-align: center;
+      object-fit: cover;
+      display: block;
     }
 
     /* SECTIONS */
@@ -301,6 +298,7 @@
 
     /* MOBILE */
     @media (max-width: 800px) {
+
       .nav-links {
         display: none;
       }
@@ -337,6 +335,7 @@
   <!-- NAVIGATION -->
   <nav>
     <div class="container nav-inner">
+
       <a href="#home" class="logo">ARYAN NAYAK</a>
 
       <ul class="nav-links">
@@ -344,19 +343,25 @@
         <li><a href="#education">Education</a></li>
         <li><a href="#internship">Internship</a></li>
         <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
         <li><a href="#gallery">Photos</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
+
     </div>
   </nav>
 
 
   <!-- HOME -->
   <section id="home" class="hero">
+
     <div class="container hero-grid">
 
       <div>
-        <div class="tag">Electrical Engineering • Diploma Graduate</div>
+
+        <div class="tag">
+          Electrical Engineering • Diploma Graduate
+        </div>
 
         <h1>
           Hi, I'm <span>Aryan Nayak</span>
@@ -369,20 +374,31 @@
         </p>
 
         <div class="buttons">
-          <a href="#about" class="btn btn-primary">Explore My Profile</a>
-          <a href="#contact" class="btn btn-secondary">Contact Me</a>
+
+          <a href="#about" class="btn btn-primary">
+            Explore My Profile
+          </a>
+
+          <a href="#contact" class="btn btn-secondary">
+            Contact Me
+          </a>
+
         </div>
+
       </div>
 
+
+      <!-- PROFILE CARD -->
       <div class="profile-card">
 
-        <!-- WE WILL ADD YOUR REAL PHOTO HERE LATER -->
+        <img
+          src="profile.jpg"
+          alt="Aryan Nayak"
+          class="profile-photo">
 
-        <div class="profile-placeholder">
-          Your professional photo
-        </div>
-
-        <h3 style="margin-top:18px;">Aryan Nayak</h3>
+        <h3 style="margin-top:18px;">
+          Aryan Nayak
+        </h3>
 
         <p style="color:#91a7bd;">
           Electrical Engineering
@@ -391,27 +407,38 @@
       </div>
 
     </div>
+
   </section>
 
 
   <!-- ABOUT -->
   <section id="about">
+
     <div class="container">
 
       <div class="section-title">
+
         <small>01 — About</small>
-        <h2>About Me</h2>
+
+        <h2>
+          About Me
+        </h2>
+
       </div>
+
 
       <div class="about-grid">
 
         <div class="card">
-          <h3>Career Objective</h3>
+
+          <h3>
+            Career Objective
+          </h3>
 
           <p>
-            Motivated Diploma Electrical Engineering graduate seeking
-            opportunities to apply technical knowledge and practical
-            training in the electrical industry.
+            Motivated Diploma Electrical Engineering graduate
+            seeking opportunities to apply technical knowledge
+            and practical training in the electrical industry.
           </p>
 
           <br>
@@ -420,81 +447,108 @@
             I am interested in power systems, electrical maintenance,
             transmission systems, electrical safety and field operations.
           </p>
+
         </div>
 
+
         <div class="card">
-          <h3>Professional Interests</h3>
 
-          <p>
-            ⚡ Electrical Power Systems
-          </p>
+          <h3>
+            Professional Interests
+          </h3>
 
-          <p>
-            🔧 Electrical Maintenance
-          </p>
+          <p>⚡ Electrical Power Systems</p>
 
-          <p>
-            🏭 Industrial Electrical Systems
-          </p>
+          <p>🔧 Electrical Maintenance</p>
 
-          <p>
-            🔌 Power Transmission
-          </p>
+          <p>🏭 Industrial Electrical Systems</p>
 
-          <p>
-            🛠️ Troubleshooting & Field Operations
-          </p>
+          <p>🔌 Power Transmission</p>
+
+          <p>🛠️ Troubleshooting & Field Operations</p>
+
         </div>
 
       </div>
+
     </div>
+
   </section>
 
 
   <!-- EDUCATION -->
   <section id="education">
+
     <div class="container">
 
       <div class="section-title">
+
         <small>02 — Education</small>
-        <h2>Education</h2>
+
+        <h2>
+          Education
+        </h2>
+
       </div>
+
 
       <div class="timeline">
 
         <div class="timeline-item">
-          <div class="date">Diploma</div>
 
-          <h3>Diploma in Electrical Engineering</h3>
+          <div class="date">
+            Diploma
+          </div>
+
+          <h3>
+            Diploma in Electrical Engineering
+          </h3>
 
           <p>
             Bhubanananda Odisha School of Engineering (BOSE), Cuttack
           </p>
+
         </div>
 
-        <div class="timeline-item">
-          <div class="date">2021</div>
 
-          <h3>10th Standard</h3>
+        <div class="timeline-item">
+
+          <div class="date">
+            2021
+          </div>
+
+          <h3>
+            10th Standard
+          </h3>
 
           <p>
             Barunai High School, Patapur
           </p>
+
         </div>
 
       </div>
+
     </div>
+
   </section>
 
 
   <!-- INTERNSHIP -->
   <section id="internship">
+
     <div class="container">
 
       <div class="section-title">
+
         <small>03 — Experience</small>
-        <h2>Internship</h2>
+
+        <h2>
+          Internship
+        </h2>
+
       </div>
+
 
       <div class="card internship">
 
@@ -513,40 +567,56 @@
         <br>
 
         <ul>
-          <li>Completed industrial training at E&MR Sub-Division, OPTCL, Choudwar.</li>
 
           <li>
-            Gained practical exposure to electrical power transmission
-            and maintenance activities.
+            Completed industrial training at E&MR Sub-Division,
+            OPTCL, Choudwar.
           </li>
 
           <li>
-            Learned operation and maintenance procedures of electrical equipment.
+            Gained practical exposure to electrical power
+            transmission and maintenance activities.
           </li>
 
           <li>
-            Observed substation functioning and power distribution processes.
+            Learned operation and maintenance procedures
+            of electrical equipment.
           </li>
 
           <li>
-            Developed understanding of electrical safety practices
-            and field operations.
+            Observed substation functioning and power
+            transmission processes.
           </li>
+
+          <li>
+            Developed understanding of electrical safety
+            practices and field operations.
+          </li>
+
         </ul>
 
       </div>
+
     </div>
+
   </section>
 
 
   <!-- SKILLS -->
   <section id="skills">
+
     <div class="container">
 
       <div class="section-title">
+
         <small>04 — Skills</small>
-        <h2>Technical Skills</h2>
+
+        <h2>
+          Technical Skills
+        </h2>
+
       </div>
+
 
       <div class="skills">
 
@@ -596,27 +666,38 @@
         </div>
 
       </div>
+
     </div>
+
   </section>
 
 
   <!-- PROJECTS -->
   <section id="projects">
+
     <div class="container">
 
       <div class="section-title">
+
         <small>05 — Projects</small>
-        <h2>Projects</h2>
+
+        <h2>
+          Projects
+        </h2>
 
         <p>
           Projects will be added here as I continue developing
           my technical and engineering skills.
         </p>
+
       </div>
+
 
       <div class="card">
 
-        <h3>Coming Soon</h3>
+        <h3>
+          Coming Soon
+        </h3>
 
         <p>
           My electrical engineering projects, college projects
@@ -626,60 +707,79 @@
       </div>
 
     </div>
+
   </section>
 
 
   <!-- PHOTOS -->
   <section id="gallery">
+
     <div class="container">
 
       <div class="section-title">
+
         <small>06 — Gallery</small>
-        <h2>Photos</h2>
+
+        <h2>
+          Photos
+        </h2>
 
         <p>
           A collection of professional, internship and project photos.
         </p>
+
       </div>
+
 
       <div class="gallery">
 
         <div class="gallery-item">
-          Internship Photo<br>
+          Internship Photo
+          <br>
           (We'll add this later)
         </div>
 
         <div class="gallery-item">
-          Certificate Photo<br>
+          Certificate Photo
+          <br>
           (We'll add this later)
         </div>
 
         <div class="gallery-item">
-          Project Photo<br>
+          Project Photo
+          <br>
           (We'll add this later)
         </div>
 
       </div>
 
     </div>
+
   </section>
 
 
   <!-- CONTACT -->
   <section id="contact">
+
     <div class="container">
 
       <div class="contact">
 
         <div class="section-title">
+
           <small>07 — Contact</small>
-          <h2>Let's Connect</h2>
+
+          <h2>
+            Let's Connect
+          </h2>
+
         </div>
 
         <p>
           I'm open to learning opportunities, internships,
           projects and professional connections.
         </p>
+
 
         <div class="buttons" style="justify-content:center;">
 
@@ -701,13 +801,17 @@
       </div>
 
     </div>
+
   </section>
 
 
   <!-- FOOTER -->
   <footer>
+
     © 2026 Aryan Nayak • Electrical Engineering Portfolio
+
   </footer>
+
 
 </body>
   </html>
